@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio de desarrollador web – proyectos, habilidades y contacto.">
+  <title>Tomasito | Desarrollador Web</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="navbar">
+  <a href="index.html" class="logo">TM<span>.</span></a>
+  <nav id="nav-menu">
+    <a href="about.html">Sobre mí</a>
+    <a href="projects.html">Proyectos</a>
+    <a href="blog.html">Blog</a>
+    <a href="#contacto">Contacto</a>
+    <button id="dark-toggle" aria-label="Alternar modo oscuro">🌓</button>
+  </nav>
+  <button id="hamburger" aria-label="Menú móvil">☰</button>
+</header>
+
+<section class="hero">
+  <img src="assets/img/hero.webp" alt="Imagen destacada de código">
+  <div class="hero-text">
+    <h1>¡Hola!, soy <span>Tomasito</span></h1>
+    <p>Ingeniero en Computación especializado en JavaScript, Node y IA.</p>
+    <a href="assets/TomasitoCV.pdf" class="btn-primary" download>Descargar CV</a>
+  </div>
+</section>
+
+<section class="skills">
+  <h2>Habilidades</h2>
+  <ul class="skill-grid">
+    <li><img src="assets/img/icons/html.svg" alt="">HTML5</li>
+    <li><img src="assets/img/icons/css.svg"  alt="">CSS3</li>
+    <li><img src="assets/img/icons/js.svg"   alt="">JavaScript</li>
+    <li><img src="assets/img/icons/node.svg" alt="">Node.js</li>
+    <li><img src="assets/img/icons/react.svg"alt="">React</li>
+    <li><img src="assets/img/icons/sqlite.svg"alt="">SQLite</li>
+  </ul>
+</section>
+
+<section class="cta">
+  <h2>¿Quieres ver mi trabajo?</h2>
+  <a href="projects.html" class="btn-secondary">Ver proyectos</a>
+</section>
+
+<section id="contacto" class="contact">
+  <h2>Contacto</h2>
+  <form id="contact-form" novalidate>
+    <label>Nombre
+      <input type="text" id="nombre" name="nombre" required>
+      <span class="error" id="errorNombre"></span>
+    </label>
+
+    <label>Correo electrónico
+      <input type="email" id="correo" name="correo" required>
+      <span class="error" id="errorCorreo"></span>
+    </label>
+
+    <label>Mensaje
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      <span class="error" id="errorMensaje"></span>
+    </label>
+
+    <button type="submit" class="btn-primary">Enviar</button>
+    <p class="success" id="successMsg"></p>
+  </form>
+</section>
+
+<footer>
+  © 2025 Tomasito · <a href="https://github.com/Tomasito">GitHub</a> · 
+  <a href="https://www.linkedin.com/in/Tomasito">LinkedIn</a>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/contact.js" defer></script>
+</body>
+</html>
