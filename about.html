@@ -1,42 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sobre mí | Tomasito</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre mí | Vosabes</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <style>
+    .about-section {
+      animation: fadeIn 1s ease;
+    }
+
+    .about-content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .about-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #60a5fa;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    }
+
+    .divider {
+      margin: 2rem 0;
+      border: none;
+      border-top: 1px solid #334155;
+    }
+
+    h2 i {
+      margin-right: 0.5rem;
+      color: #60a5fa;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== Experiencia Mejorada ===== */
+    .experience-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .experience-list li {
+      margin-bottom: 1.5rem;
+    }
+
+    .experience-list li p {
+      margin-top: 0.3rem;
+      color: #cbd5e1;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  </style>
 </head>
 <body>
-<header class="navbar">
-  <a href="index.html" class="logo">To<span>.</span></a>
-  <nav id="nav-menu">
-    <a href="about.html">Sobre mí</a>
-    <a href="projects.html">Proyectos</a>
-    <a href="blog.html">Blog</a>
-    <a href="index.html#contacto">Contacto</a>
-  </nav>
-</header>
+  <header class="navbar">
+    <a href="index.html" class="logo"
+      >Sobre Mí<span>.</span></a
+    >
+    <nav id="nav-menu">
+      <a href="about.html">Sobre mí</a>
+      <a href="projects.html">Proyectos</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </header>
 
-<main class="container">
-  <h1>Sobre mí</h1>
-  <p>Soy un desarrollador web con pasión por crear soluciones elegantes y funcionales. Desde la concepción hasta la puesta en producción, disfruto cada etapa del ciclo de desarrollo.</p>
+  <main class="about-section">
+    <div class="about-content">
+      <img
+        src="https://i.ibb.co/ZRJnH5WZ/gazirrr.jpg"
+        alt="Mi imagen"
+        class="about-avatar"
+      />
+      <div>
+        <h1>Sobre mí</h1>
+        <p>
+          Soy Aaron, un desarrollador web de 19 años apasionado por crear páginas funcionales y elegantes. Seguidor del MTB, especialmente el descenso con mi Commencal Meta, y soy hincha fanático del Bulla, alentando siempre desde donde sea. También disfruto las apuestas deportivas, aunque no siempre gano.
+          <br /><strong>¡Aguante el Bulla! 💙🤘</strong>
+        </p>
+      </div>
+    </div>
 
-  <h2>Experiencia</h2>
-  <ul>
-    <li><strong>Docente </strong> – Hogar (2024‑presente)</li>
-    <li><strong>Free </strong> – Universidad  (2023)</li>
+    <hr class="divider" />
+
+    <section>
+      <h2><i class="fa-solid fa-briefcase"></i> Experiencia</h2>
+      <ul class="experience-list">
+        <li>
+          <strong>Desarrollador Web Junior</strong> – Proyectos personales y freelance (2023‑presente)
+          <p>Creación de páginas funcionales y elegantes, aplicando buenas prácticas y pasión por el detalle.</p>
+        </li>
+        <li>
+          <strong>Descenso Urbano en MTB</strong> – Aficionado activo (desde hace varios años)
+          <p>Deachero urbano en mi Commencal Meta, full adrenalina y amante del deporte extremo vosabes.</p>
+        </li>
+        <li>
+          <strong>Apostador Nato</strong> – 1% probabilidad, 99% fe
+          <p>Disfruto las apuestas deportivas con pura confianza, aunque la suerte no siempre hace la 2.</p>
+        </li>
+        <li><strong>Docente</strong> – Hogar (2024‑presente)</li>
+        <li><strong>Free</strong> – Universidad (2023)</li>
+      </ul>
+    </section>
+
+    <section>
+  <h2><i class="fa-solid fa-certificate"></i> Certificaciones</h2>
+  <ul class="certification-list">
+    <li>
+      <strong>PMP (en progreso)</strong> – Formación en gestión de proyectos para mejorar la planificación y ejecución de desarrollos web.
+    </li>
+    <li>
+      <strong>Scrum Master (2024)</strong> – Certificación en metodologías ágiles para optimizar el trabajo en equipo y entrega rápida.
+    </li>
+    <li>
+      <strong>Curso básico de MTB</strong> – Técnicas de descenso y manejo para mejorar en la práctica del freeride.
+    </li>
+    <li>
+      <strong>Autodidacta en análisis de apuestas deportivas</strong> – Aprendizaje continuo para combinar probabilidades con intuición y fe.
+    </li>
   </ul>
+</section>
 
-  <h2>Certificaciones</h2>
-  <ul>
-    <li>PMP (en progreso)</li>
-    <li>Scrum Master (2024)</li>
-  </ul>
-</main>
 
-<footer>
-  © 2025 Tomasito
-</footer>
-<script src="assets/js/main.js" defer></script>
+  </main>
+
+  <footer>© 2025 Vosabes</footer>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

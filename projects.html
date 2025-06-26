@@ -1,14 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Proyectos | Tomasito</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyectos | Vosabes</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .projects {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      color: #f8fafc;
+    }
+
+    .projects h1 {
+      border-left: 4px solid #60a5fa;
+      padding-left: 1rem;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #1e293b;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      object-fit: cover;
+      aspect-ratio: 16 / 9;
+    }
+
+    .card-body {
+      padding: 1rem 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-body h3 {
+      color: #60a5fa;
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+
+    .card-body p {
+      flex-grow: 1;
+      color: #cbd5e1;
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: #60a5fa;
+      border: 2px solid #60a5fa;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background-color: #60a5fa;
+      color: #0f172a;
+    }
+
+    @media (max-width: 500px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 <header class="navbar">
-  <a href="index.html" class="logo">To<span>.</span></a>
+  <a href="index.html" class="logo">Vosabes<span>.</span></a>
   <nav id="nav-menu">
     <a href="about.html">Sobre mí</a>
     <a href="projects.html">Proyectos</a>
@@ -21,19 +108,27 @@
   <h1>Proyectos Destacados</h1>
   <div class="card-grid">
     <article class="card">
-      <img src="assets/img/projects/inventario.png" alt="Inventario Node">
+      <img src="assets/img/projects/inventario.png" alt="Inventario Node" />
       <div class="card-body">
         <h3>Sistema Inventario Node</h3>
         <p>Aplicación full‑stack en Node.js, Express, SQLite y JWT.</p>
         <a href="https://github.com/Tomasito/inventario-node" target="_blank" rel="noopener" class="btn-secondary">Código</a>
       </div>
     </article>
-    <!-- Añade más tarjetas aquí -->
+
+    <article class="card">
+      <img src="https://i.ibb.co/ZRJnH5WZ/gazirrr.jpg" alt="Blog MTB y apuestas" />
+      <div class="card-body">
+        <h3>Blog MTB y Apuestas</h3>
+        <p>Blog donde comparto mis experiencias en descenso urbano y consejos sobre apuestas deportivas.</p>
+        <a href="https://github.com/tuUsuario/blog-mtb-apuestas" target="_blank" rel="noopener" class="btn-secondary">Código</a>
+      </div>
+    </article>
   </div>
 </section>
 
 <footer>
-  © 2025 Tomasito
+  © 2025 Vosabes
 </footer>
 <script src="assets/js/main.js" defer></script>
 </body>
