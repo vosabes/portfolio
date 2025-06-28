@@ -46,6 +46,8 @@ body {
   background: none;
   font-size: 1.5rem;
   border: none;
+  color: #f8fafc;
+  cursor: pointer;
 }
 
 /* === HERO === */
@@ -204,7 +206,6 @@ footer a {
   border-radius: 1rem;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
-
 .container h1,
 .container h2 {
   color: #f8fafc;
@@ -214,18 +215,15 @@ footer a {
   margin-bottom: 1rem;
   font-weight: 700;
 }
-
 .container p {
   margin-bottom: 2rem;
   color: #cbd5e1;
   font-size: 1.125rem;
 }
-
 .container ul {
   list-style: none;
   padding: 0;
 }
-
 .container li {
   background-color: #0f172a;
   padding: 1rem;
@@ -235,12 +233,91 @@ footer a {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: transform 0.2s ease;
 }
-
 .container li:hover {
   transform: translateX(5px);
 }
 
+/* === MEDIA QUERIES RESPONSIVAS === */
+@media (max-width: 768px) {
+  #hamburger {
+    display: block;
+    color: #f8fafc;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  nav#nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1e293b;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  nav#nav-menu.active {
+    display: flex;
+  }
+
+  nav#nav-menu a {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero img {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .hero-text {
+    padding: 0 1rem;
+  }
+
+  .skill-grid {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+
+  .skill-grid li {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .cta,
+  .contact {
+    padding: 3rem 1rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  footer a {
+    display: inline-block;
+    margin-top: 0.25rem;
+  }
+
   .container {
     margin: 1rem;
     padding: 1.5rem;

@@ -35,11 +35,10 @@
     <div class="hero-text" data-aos="fade-right">
       <h1>¡Hola!, soy <span>Vosabes</span></h1>
       <p>Ingeniero en Computación especializado en JavaScript, Node y IA.</p>
-      <a href="assets/TomasitoCV.pdf" class="btn-primary" download>Descargar CV</a>
+      <a href="assets/Aaron_UrquietaCV.pdf" class="btn-primary" download>Descargar CV</a>
     </div>
     <div class="hero-img" data-aos="fade-left">
       <img src="https://via.placeholder.com/300x200?text=Hero+Image" alt="Imagen de prueba" />
-
     </div>
   </section>
 
@@ -86,16 +85,19 @@
     </form>
   </section>
 
-  <!-- FOOTER -->
-  <footer data-aos="fade-up">
-    © 2025 Vosabes · 
-    <a href="https://github.com/vosabes" target="_blank">GitHub</a> · 
-    <a href="https://www.linkedin.com/in/Tomasito" target="_blank">LinkedIn</a>
-  </footer>
+  <!-- EmailJS SDK + Inicialización -->
+  <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init('ddReK9cY3u7JQx-xz'); // ← Tu Public Key aquí
+    })();
+  </script>
 
-  <!-- JS + AOS -->
+  <!-- JS principal -->
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/contact.js" defer></script>
+
+  <!-- AOS Animaciones -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -104,5 +106,13 @@
       easing: 'ease-in-out'
     });
   </script>
+
+  <!-- FOOTER -->
+  <footer data-aos="fade-up">
+    © 2025 Vosabes · 
+    <a href="https://github.com/vosabes" target="_blank">GitHub</a> · 
+    <a href="https://www.linkedin.com/in/Tomasito" target="_blank">LinkedIn</a>
+  </footer>
+
 </body>
 </html>
