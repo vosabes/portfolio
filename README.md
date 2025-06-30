@@ -34,7 +34,7 @@ Está optimizado para celular, con modo oscuro, animaciones, descarga de CV y fo
 - Se agregó botón para **descargar el CV en PDF**
 - Se corrigió la estructura para desplegar correctamente en **GitHub Pages** (`/docs`)
 - Se reorganizaron todos los archivos y rutas internas para compatibilidad web
-- Se mejoró el diseño responsive, con menú hamburguesa funcional en móvil
+- Se mejoró el diseño responsive, con menú hamburguesa funcional en telefono móvil
 - Se personalizó todo el contenido con mi información real, enlaces y proyectos
 
 ---
