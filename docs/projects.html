@@ -14,7 +14,7 @@
     }
 
     .projects h1 {
-      border-left: 4px solid #ff6600; /* naranja fox */
+      border-left: 4px solid #ff6600;
       padding-left: 1rem;
       margin-bottom: 2rem;
       font-weight: 700;
@@ -29,7 +29,7 @@
     .card {
       background-color: #1e293b;
       border-radius: 1rem;
-      box-shadow: 0 0 20px rgba(255, 102, 0, 0.2); /* sombra naranja */
+      box-shadow: 0 0 20px rgba(255, 102, 0, 0.2);
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       display: flex;
@@ -38,7 +38,7 @@
 
     .card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 10px 30px rgba(255, 102, 0, 0.4); /* sombra naranja más intensa */
+      box-shadow: 0 10px 30px rgba(255, 102, 0, 0.4);
     }
 
     .card img {
@@ -56,7 +56,7 @@
     }
 
     .card-body h3 {
-      color: #ff6600; /* naranja fox */
+      color: #ff6600;
       margin-bottom: 0.75rem;
       font-weight: 700;
     }
@@ -71,7 +71,7 @@
 
     .btn-secondary {
       background-color: transparent;
-      color: #ff6600; /* naranja fox */
+      color: #ff6600;
       border: 2px solid #ff6600;
       padding: 0.5rem 1rem;
       border-radius: 9999px;
@@ -79,6 +79,9 @@
       font-weight: 600;
       text-align: center;
       transition: background-color 0.3s ease, color 0.3s ease;
+      display: inline-block;
+      width: fit-content;
+      align-self: flex-start;
     }
 
     .btn-secondary:hover {
@@ -107,23 +110,43 @@
 <section class="projects">
   <h1>Proyectos Destacados</h1>
   <div class="card-grid">
+
+    <!-- Card Instagram -->
     <article class="card">
-      <img src="assets/img/projects/inventario.png" alt="Inventario Node" />
+<img src="assets/img/ig.png" alt="Instagram" style="
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: 40% center; /* más a la izquierda que 20% */
+  border-radius: 1rem 1rem 0 0;
+  display: block;
+" />
+
       <div class="card-body">
-        <h3>Sistema Inventario Node</h3>
-        <p>Aplicación full‑stack en Node.js, Express, SQLite y JWT.</p>
-        <a href="https://github.com/vosabes/portfolio-aaron" target="_blank" rel="noopener" class="btn-secondary">Código</a>
+        <h3>Instagram</h3>
+        <p>Sigue mis aventuras, fotos y novedades diarias en Instagram.</p>
+        <a href="https://instagram.com/onfleek.47" target="_blank" rel="noopener" class="btn-secondary">Ir a Instagram</a>
       </div>
     </article>
 
-    <article class="card">
-      <img src="https://i.ibb.co/ZRJnH5WZ/gazirrr.jpg" alt="Blog MTB y apuestas" />
-      <div class="card-body">
-        <h3>Blog MTB y Apuestas</h3>
-        <p>Blog donde comparto mis experiencias en descenso urbano y consejos sobre apuestas deportivas.</p>
-        <a href="https://github.com/vosabes/portfolio-aaron" target="_blank" rel="noopener" class="btn-secondary">Código</a>
-      </div>
-    </article>
+<!-- Card Blog MTB -->
+<article class="card">
+  <img src="assets/img/meta.jpg" alt="Blog MTB y apuestas" style="
+    width: 100%;          /* Que ocupe todo el ancho del card */
+    height: 220px;        /* Altura para que se vea grande */
+    object-fit: cover;    /* Cubrir sin distorsionar */
+    object-position: center bottom; /* Foco en la parte baja */
+    border-radius: 1rem 1rem 0 0;  /* Bordes redondeados arriba */
+    display: block;
+  " />
+  <div class="card-body">
+    <h3>Blog MTB y Apuestas</h3>
+    <p>Blog personal donde comparto mi experiencia en descenso urbano, recomendaciones de equipos y estrategias sobre apuestas deportivas.</p>
+    <a href="blog-mtb.html" class="btn-secondary">Leer más</a>
+  </div>
+</article>
+
+
   </div>
 </section>
 
