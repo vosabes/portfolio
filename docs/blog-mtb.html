@@ -1,54 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog MTB y Apuestas | Vosabes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog MTB y Apuestas</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <style>
     body {
-      background: #0f172a;
-      color: #f8fafc;
+      background-color: #0f172a;
       font-family: 'Inter', sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
+      color: #f8fafc;
       padding: 2rem 1rem;
+      line-height: 1.6;
+    }
+
+    .blog-container {
+      max-width: 900px;
+      margin: auto;
     }
 
     h1 {
+      font-size: 2.5rem;
       color: #ff6600;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    h2 {
+      color: #ff6600;
+      margin-top: 2rem;
       margin-bottom: 1rem;
     }
 
     p {
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
+      color: #cbd5e1;
+      font-size: 1.1rem;
     }
 
-    a.volver {
+    .blog-img {
+      width: 100%;
+      border-radius: 1rem;
+      margin: 1.5rem 0;
+      box-shadow: 0 0 20px rgba(255, 102, 0, 0.3);
+    }
+
+    ul {
+      margin-top: 0.5rem;
+      padding-left: 2rem;
+      color: #facc15;
+    }
+
+    a.back-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: transparent;
       color: #ff6600;
+      border: 2px solid #ff6600;
+      padding: 0.5rem 1.2rem;
+      border-radius: 9999px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: 0.3s;
     }
 
-    a.volver:hover {
-      text-decoration: underline;
+    a.back-btn:hover {
+      background-color: #ff6600;
+      color: #0f172a;
     }
   </style>
 </head>
 <body>
 
-  <a href="projects.html" class="volver">← Volver a Proyectos</a>
+  <div class="blog-container">
+    <h1>Blog MTB y Apuestas</h1>
 
-  <h1>Blog MTB y Apuestas</h1>
+    <img src="assets/img/metaa.jpg" alt="Imagen MTB" class="blog-img" />
 
-  <p>¡Bienvenido a este espacio donde se combinan dos mundos intensos: el descenso urbano en bicicleta y las apuestas deportivas!</p>
+    <h2>🚴‍♂️ Mi experiencia en el descenso urbano</h2>
+    <p>El descenso urbano es más que un deporte: es pasión, adrenalina y técnica. Cada ruta, cada escalera, cada curva se convierte en un desafío que me empuja a superarme. Aquí comparto mis vivencias, caídas y triunfos en cada bajada.</p>
 
-  <p>El MTB me ha enseñado disciplina, adrenalina y pasión por los desafíos. Y el mundo de las apuestas, bien llevado, es estrategia, análisis y emoción. En este artículo te cuento cómo vivo ambos mundos.</p>
+    <h2>⚙️ Equipamiento que recomiendo</h2>
+    <p>Si quieres entrar en este mundo o mejorar tu set up, te dejo mis recomendaciones:</p>
+    <ul>
+      <li>Horquilla Fox 40 con recubrimiento Kashima 🦊</li>
+      <li>Casco integral Fox Speedframe Pro</li>
+      <li>Rodilleras y coderas G-Form</li>
+      <li>Guantes Fox Ranger</li>
+      <li>Zapatillas Five Ten Impact</li>
+    </ul>
 
-  <p>Recomiendo bicicletas de buena suspensión, cascos integrales y empezar con recorridos urbanos fáciles. En apuestas, investiga, no te dejes llevar por la emoción y usa apps confiables.</p>
+    <h2>💸 Apuestas con cabeza</h2>
+    <p>Apostar no es tirar monedas al aire. En mi caso, analizo estadísticas, tendencias y mercados. No solo apuesto por MTB: también sigo fútbol y eSports. Siempre con límites, estrategia y sin dejar que la emoción controle las decisiones.</p>
 
-  <p>¡Si quieres saber más, escríbeme por Instagram o por el formulario de contacto!</p>
+    <a href="projects.html" class="back-btn">← Volver a Proyectos</a>
+  </div>
 
 </body>
 </html>
